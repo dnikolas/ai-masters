@@ -266,6 +266,83 @@
             font-weight: 600;
         }
 
+        /* Title blocks */
+        .title-blocks {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin: 48px 0;
+            flex-wrap: wrap;
+        }
+
+        .title-block {
+            background: 
+                linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%),
+                linear-gradient(45deg, rgba(0, 122, 255, 0.05) 0%, rgba(0, 212, 255, 0.03) 50%, rgba(175, 82, 222, 0.05) 100%);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 24px 32px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            min-width: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .title-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00D4FF, #007AFF, #AF52DE);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .title-block:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 
+                0 16px 48px rgba(0, 122, 255, 0.3),
+                0 0 60px rgba(0, 212, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border-color: rgba(0, 122, 255, 0.4);
+            background: 
+                linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%),
+                linear-gradient(45deg, rgba(0, 122, 255, 0.08) 0%, rgba(0, 212, 255, 0.05) 50%, rgba(175, 82, 222, 0.08) 100%);
+        }
+
+        .title-block:hover::before {
+            opacity: 1;
+        }
+
+        .block-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+            display: block;
+            filter: drop-shadow(0 4px 12px rgba(0, 122, 255, 0.3));
+            transition: all 0.3s ease;
+        }
+
+        .title-block:hover .block-icon {
+            transform: scale(1.1);
+            filter: drop-shadow(0 6px 16px rgba(0, 212, 255, 0.5));
+        }
+
+        .block-text {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #FFFFFF;
+            letter-spacing: -0.01em;
+            line-height: 1.4;
+        }
+
         .particle {
             position: absolute;
             width: 4px;
@@ -330,7 +407,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             padding: 60px 40px 120px;
             opacity: 0;
@@ -340,13 +417,6 @@
 
         .slide.active {
             opacity: 1;
-        }
-
-        /* Special centering for title slide */
-        .slide-title {
-            justify-content: center;
-            align-items: center;
-            text-align: center;
         }
 
         .slide-content {
@@ -1227,13 +1297,6 @@
         @media (max-width: 768px) {
             .slide {
                 padding: 40px 24px 100px;
-                justify-content: center;
-            }
-
-            .slide-title {
-                justify-content: center;
-                align-items: center;
-                text-align: center;
             }
 
             .cyber-orb {
@@ -1372,6 +1435,24 @@
                 width: 36px;
                 height: 36px;
                 font-size: 1rem;
+            }
+
+            .title-blocks {
+                gap: 20px;
+                margin: 32px 0;
+            }
+
+            .title-block {
+                padding: 20px 24px;
+                min-width: 160px;
+            }
+
+            .block-icon {
+                font-size: 2rem;
+            }
+
+            .block-text {
+                font-size: 0.9375rem;
             }
 
             .comet {
@@ -1513,16 +1594,6 @@
         @media (max-width: 600px) {
             .slide {
                 padding: 32px 20px 80px;
-                justify-content: center;
-            }
-
-            .slide-title {
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
             }
 
             .slide-title .main-heading {
@@ -1579,6 +1650,24 @@
                 font-size: 1.125rem;
             }
 
+            .title-blocks {
+                gap: 24px;
+                margin: 40px 0;
+            }
+
+            .title-block {
+                padding: 22px 28px;
+                min-width: 180px;
+            }
+
+            .block-icon {
+                font-size: 2.25rem;
+            }
+
+            .block-text {
+                font-size: 0.9375rem;
+            }
+
             .comet {
                 width: 2px;
                 height: 2px;
@@ -1598,16 +1687,6 @@
         @media (max-width: 480px) {
             .slide {
                 padding: 28px 16px 70px;
-                justify-content: center;
-            }
-
-            .slide-title {
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
             }
 
             .slide-title .main-heading {
@@ -1730,6 +1809,28 @@
                 font-size: 1rem;
             }
 
+            .title-blocks {
+                gap: 16px;
+                margin: 24px 0;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .title-block {
+                padding: 16px 20px;
+                min-width: 140px;
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .block-icon {
+                font-size: 1.75rem;
+            }
+
+            .block-text {
+                font-size: 0.875rem;
+            }
+
             .insight-card {
                 font-size: 1rem;
                 padding: 20px;
@@ -1799,16 +1900,6 @@
         @media (max-width: 360px) {
             .slide {
                 padding: 24px 12px 60px;
-                justify-content: center;
-            }
-
-            .slide-title {
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
             }
 
             .slide-title .main-heading {
@@ -1867,6 +1958,25 @@
                 font-size: 0.9375rem;
             }
 
+            .title-blocks {
+                gap: 12px;
+                margin: 20px 0;
+            }
+
+            .title-block {
+                padding: 14px 16px;
+                min-width: 120px;
+                max-width: 240px;
+            }
+
+            .block-icon {
+                font-size: 1.5rem;
+            }
+
+            .block-text {
+                font-size: 0.8125rem;
+            }
+
             .comet {
                 width: 1px;
                 height: 1px;
@@ -1910,6 +2020,23 @@
                 <div class="slide-content">
                     <h1 class="main-heading">AI-агенты для бизнеса</h1>
                     <p class="sub-heading">Бежать к <span class="key-word">успеху</span> лучше вместе с <span class="key-word">десятком роботов</span> в команде</p>
+                    
+                    <!-- Блоки-элементы -->
+                    <div class="title-blocks">
+                        <div class="title-block">
+                            <div class="block-icon">🤖</div>
+                            <div class="block-text">Автоматизация процессов</div>
+                        </div>
+                        <div class="title-block">
+                            <div class="block-icon">📊</div>
+                            <div class="block-text">Аналитика и прогнозы</div>
+                        </div>
+                        <div class="title-block">
+                            <div class="block-icon">🚀</div>
+                            <div class="block-text">Рост эффективности</div>
+                        </div>
+                    </div>
+                    
                     <p class="sub-heading" style="margin-top: 40px; color: #FFFFFF; font-size: 1.125rem;">Компании, <span class="key-word">автоматизировавшие</span> рутину, растут в <span class="key-number">2–3 раза</span> быстрее конкурентов</p>
                 </div>
             </div>
