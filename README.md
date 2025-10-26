@@ -1,73 +1,148 @@
-# Welcome to your Lovable project
+# 🚀 AI-агенты для бизнеса - Презентация
 
-## Project info
+Современная интерактивная презентация о внедрении AI-агентов в бизнес-процессы, выполненная в стиле Apple с элементами хайтек и фантастики.
 
-**URL**: https://lovable.dev/projects/50a47781-3a1f-438c-87b2-0fbba675672c
+## ✨ Особенности
 
-## How can I edit this code?
+- **Современный дизайн** в стиле Apple с glassmorphism эффектами
+- **Интерактивная навигация** с плавными переходами
+- **Космические эффекты** с анимированными частицами и кометами
+- **Адаптивный дизайн** для всех устройств
+- **Голографические элементы** и энергетические кольца
+- **Продвинутая типографика** с SF Pro Display
 
-There are several ways of editing your application.
+## 🎨 Технологии
 
-**Use Lovable**
+- **HTML5** - семантическая разметка
+- **CSS3** - современные эффекты и анимации
+- **JavaScript** - интерактивность и навигация
+- **QRCode.js** - генерация QR-кодов
+- **GitHub Pages** - хостинг
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/50a47781-3a1f-438c-87b2-0fbba675672c) and start prompting.
+## 🚀 Демо
 
-Changes made via Lovable will be committed automatically to this repo.
+Презентация доступна по адресу: [https://your-username.github.io/apple-tech-dream](https://your-username.github.io/apple-tech-dream)
 
-**Use your preferred IDE**
+## 📱 Навигация
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Клавиатура**: ← → для переключения слайдов
+- **Мышь**: кнопки навигации внизу экрана
+- **Сенсор**: свайпы влево/вправо на мобильных устройствах
+- **Индикаторы**: клик по точкам для быстрого перехода
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🎯 Содержание презентации
 
-Follow these steps:
+1. **Титульный слайд** - AI-агенты для бизнеса
+2. **Проблема** - главные вызовы современного бизнеса
+3. **Решения** - что мы внедряем
+4. **Новые рынки** - выход на международные рынки
+5. **Кейсы** - реальные примеры внедрения
+6. **Процесс** - этапы работы
+7. **Условия** - условия сотрудничества
+8. **Продукт** - бесплатный продукт для тестирования
+9. **Старт** - как начать работу
+10. **Контакты** - связь с командой
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Установка и запуск
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Локальная разработка
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Клонируйте репозиторий
+git clone https://github.com/your-username/apple-tech-dream.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Перейдите в директорию
+cd apple-tech-dream
+
+# Откройте index.html в браузере
+open index.html
 ```
 
-**Edit a file directly in GitHub**
+### GitHub Pages
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Форкните репозиторий
+2. Перейдите в Settings → Pages
+3. Выберите Source: Deploy from a branch
+4. Выберите Branch: main
+5. Сохраните настройки
 
-**Use GitHub Codespaces**
+## 📁 Структура проекта
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+apple-tech-dream/
+├── index.html          # Основной файл презентации
+├── README.md           # Документация проекта
+└── .github/
+    └── workflows/
+        └── deploy.yml  # GitHub Actions для автоматического деплоя
+```
 
-## What technologies are used for this project?
+## 🎨 Дизайн-система
 
-This project is built with:
+### Цветовая палитра
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Основной синий**: #007AFF
+- **Голубой**: #00D4FF
+- **Фиолетовый**: #AF52DE
+- **Зеленый**: #34C759
+- **Фон**: #000000
 
-## How can I deploy this project?
+### Типографика
 
-Simply open [Lovable](https://lovable.dev/projects/50a47781-3a1f-438c-87b2-0fbba675672c) and click on Share -> Publish.
+- **Заголовки**: SF Pro Display, 100-300 weight
+- **Основной текст**: SF Pro Text, 300-500 weight
+- **Акценты**: градиентные тексты
 
-## Can I connect a custom domain to my Lovable project?
+### Эффекты
 
-Yes, you can!
+- **Glassmorphism**: backdrop-filter с размытием
+- **Голографические элементы**: энергетические кольца
+- **Космические эффекты**: частицы и кометы
+- **Анимации**: cubic-bezier переходы
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📱 Адаптивность
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **Desktop**: 1920px+ - полные эффекты
+- **Tablet**: 768px-1919px - оптимизированные эффекты
+- **Mobile**: 320px-767px - упрощенные эффекты
+
+## 🔧 Настройка
+
+### Изменение контента
+
+Отредактируйте HTML-разметку в `index.html`:
+
+- Заголовки слайдов
+- Текст контента
+- Контактную информацию
+- QR-коды
+
+### Изменение стилей
+
+Настройте CSS в секции `<style>`:
+
+- Цветовую схему
+- Анимации
+- Размеры элементов
+- Эффекты
+
+## 📄 Лицензия
+
+MIT License - используйте свободно для своих проектов.
+
+## 🤝 Вклад в проект
+
+1. Форкните репозиторий
+2. Создайте ветку для новой функции
+3. Внесите изменения
+4. Создайте Pull Request
+
+## 📞 Контакты
+
+- **Sales**: @Nick_khusnutdinov
+- **AI Engineering**: @dnickolas
+- **Website**: [scroogeprice.pro](https://scroogeprice.pro)
+
+---
+
+Создано с ❤️ для демонстрации возможностей AI в бизнесе
